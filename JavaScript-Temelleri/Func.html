@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+     /**
+     
+     function soru(sor, evet, hayir){
+        if(confirm(sor))
+        evet()
+        else
+        hayir()
+       }
+
+       soru("Yaşınız 18'den büyük mü?",
+       function() {alert("Girebilirsiniz")},
+       function() {alert("Girmenize izin yok")}
+       )
+**/
+
+/**
+let toplam=function(a,b){
+    return a-b
+}
+
+alert(toplam(4,56))
+**/
+
+/**
+function toplam(a,b){
+    return a+b
+}
+
+alert(toplam(4,51))
+**/
+
+/**
+let isim=function(a){
+    return a
+}
+
+alert(isim("Habib"))
+**/
+
+
+let yas = prompt("Kaç yaşındasın?", 18);
+
+let merhaba = (yas<18) ?
+function() {alert("Merhaba")} :
+function() {alert("MERHABALAR")}
+
+merhaba()
+
+
+
+
+    </script>
+</body>
+
+</html>
