@@ -1,9 +1,9 @@
 // let kullanici = {};
 
 let kullanici  = {
-    isim :"Habib",
-    yas : 31,
-    soyisim : "ALPASLANOĞULLARI"
+    name :"Habib",
+    age : 31,
+    surname : "ALPASLANOĞULLARI"
 };
 
 console.log(isim)
