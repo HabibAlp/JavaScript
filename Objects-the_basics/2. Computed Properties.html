@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+/**
+let fruit = prompt("What kind fruit do you prefer?", "fruit" )
+
+let pocket = {
+    [fruit] :true,
+};
+
+alert(pocket.elma);  //pocket[fruit] yazıı ile aynıdır.
+
+**/
+
+/**
+let fruit = prompt("What kind fruit do you prefer?", "fruit" )
+
+let pocket = {
+    [fruit] :"That's right",
+};
+
+alert(pocket[fruit]);  // Artık fruit anahtarının içeriği önemli değildir.
+**/
+
+
+let fruit ="elma"
+
+let pocket = {
+    [fruit + "yedim"] : "Doğru"
+}
+
+alert(pocket.elmayedim)  //Yazımı biraz değişiktir ama bu şekilde kullanılabilir.
+//alert(pocket[fruit+"yedim"]) //Bu şekilde de kullanılabilir. 
+
+    </script>
+</body>
+</html>
