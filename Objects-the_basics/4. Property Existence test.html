@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+        let user = {
+            isim: "Habib",
+            yas: 31
+        }
+
+        alert("isim" in user) // true user içinde isim anahtarı var mıdır?
+        alert("age" in user)  // false user içinde age anahtarı var mıdır?
+        **/
+
+// Aynı kullanımı fonksiyon içinde de kontrol edebiliriz.      
+        function user(isim, yas) {
+            return {
+                isim,
+                yas
+            };
+        }
+
+        let kullanici = user("Habib", 31)
+
+        alert(kullanici.isim)
+        alert("isim" in kullanici)
+        
+        alert(kullanici.yas)
+        alert("yas" in kullanici)
+
+
+
+
+    </script>
+</body>
+
+</html>
