@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /**
+        let ad = Symbol("id"); //Açıklaması id olan Symbol
+
+        alert(ad.toString())   //Symboller Stringe çevrildikten sonra yazılırlar. 
+        **/
+
+        /**
+        let kullanici ={
+            name : "Habib"
+        }
+
+        let ad =Symbol("Dilek");
+
+        kullanici[ad] = "ALPASLANOĞULLARI";
+
+        alert(ad.toString())
+        **/
+
+        /**
+                let user = {
+                    surname: "ALPASLANOĞULLARI"
+                }
+                let ad; 
+        
+                user.ad = "Dilek";
+                alert(user.ad)
+        
+                user[ad] = "Habib"  //Bunun özelliği user.ad ="Habib" yazsaydım Dilek yok olacaktı. 
+                alert(user[ad])
+        
+                ad = Symbol("Yusuf");
+                alert(ad.toString())
+        **/
+
+        /**
+        let id = Symbol("id") // id adında bir sembol tanımladığımızı göstermemiz gerekiyor. [id] tanımlaması yapılabilir.
+
+        let kullanici = {
+            isim: "Mahsun",
+            [id]: 123   // Değiştirilemez
+        }
+
+
+        kullanici.id = "YUSUF"
+
+        alert(kullanici[id])  //123
+        alert(kullanici.id)   //YUSUF
+
+        **/
+
+        
+        //SEMBOLLER FOR .... İN DÖNGÜSÜNDE PAS GEÇİLİR.
+        
+/**
+        let password = Symbol();
+        let user ={
+            name : "Habib",
+            surname: "ALPASLANOĞULLARI",
+            [password] : 123456   
+        }
+
+        for (let key in user){  //Döngü sadece name ve surname için döner. [password] pas geçer.
+            alert(user[key])
+        }  
+
+        alert("DOĞRUDAN YAZILIR: " + user[password])  
+
+**/
+
+
+/**
+let ad1 =Symbol("ad")
+let ad2 =Symbol("ad")
+
+alert(ad1==ad2)  //false Açıklamalar aynı bile olsa false çıkar  
+ 
+let isim1 =Symbol.for("isim")   
+let isim2 =Symbol.for("isim")
+ 
+alert(isim1 == isim2)  // true Açıklamalar aynı ise true
+ 
+let name1 =Symbol.for("farklı")   
+let name2 =Symbol.for("farklıı")
+ 
+alert(name1 == name2)        
+
+**/
+
+//SYMBOL.keyfor
+
+let ad= Symbol.for("Dilek")
+let soyisim = Symbol.for("Habib")
+
+alert(Symbol.keyFor(ad))
+alert(Symbol.keyFor(soyisim))
+    </script>
+</body>
+
+</html>

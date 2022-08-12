@@ -11,53 +11,72 @@
 <body>
 
     <script>
-     /**
-     
-     function soru(sor, evet, hayir){
-        if(confirm(sor))
-        evet()
-        else
-        hayir()
-       }
-
-       soru("Yaşınız 18'den büyük mü?",
-       function() {alert("Girebilirsiniz")},
-       function() {alert("Girmenize izin yok")}
-       )
-**/
 
 /**
-let toplam=function(a,b){
-    return a-b
-}
+        function soru(sor, evet, hayir) {
+            if (confirm(sor))
+                evet()
+            else
+                hayir()
+        }
 
-alert(toplam(4,56))
+        soru("Yaşınız 18'den büyük mü?",
+            function () { alert("Girebilirsiniz") },
+            function () { alert("Girmenize izin yok") }
+        )
+
 **/
 
-/**
-function toplam(a,b){
-    return a+b
-}
-
-alert(toplam(4,51))
-**/
-
-/**
-let isim=function(a){
-    return a
-}
-
-alert(isim("Habib"))
-**/
+        /**
+        let toplam=function(a,b){
+            return a-b
+        }
+        
+        alert(toplam(4,56))
+        **/
 
 
-let yas = prompt("Kaç yaşındasın?", 18);
+        /**
+        function toplam(a,b){
+            return a+b
+        }
+        
+        alert(toplam(4,51))
+        **/
 
-let merhaba = (yas<18) ?
-function() {alert("Merhaba")} :
-function() {alert("MERHABALAR")}
+        
+        let isim=function(a){
+            return a
+        }
+        
+        alert(isim("Habib"))
+        
+        
 
-merhaba()
+
+        /**
+        
+        let yas = prompt("Kaç yaşındasın?", 18);
+        
+        let merhaba = (yas<18) ?
+        function() {alert("Merhaba")} :
+        function() {alert("MERHABALAR")}
+        
+        merhaba()
+        
+        **/
+
+
+
+
+        /**
+        let hello = (yas<18) ?
+        () => {alert("Hello")} :
+        () => {alert("HELLO")}
+        
+        hello()
+        
+        **/
 
 
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+      //Primiteve Copying - İlkel Kopyalama
+
+        let name="HABİB";
+        let isim =name;
+    
+        alert(isim + " " + name)
+
+      //Reference Copying - Reference Kopyalama   
+
+      let user = {  
+        name: "Dilek",
+        age : 31
+      }
+
+      let kullanici = user  // User objesine kullanici adında da bir anahtar tanımlamış olduk.  Reference kopyalama 
+
+      alert(kullanici.name)
+      
+      kullanici.name="Yusuf Ali"
+
+      alert(kullanici.name) 
+      alert("İki değişkeni de kullanabiliriz.")  
+      alert(user.name) 
+    
+    </script>
+</body>
+</html>

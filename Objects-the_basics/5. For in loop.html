@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /**
+                let user ={
+                    name : "Habib",
+                    age : "31",
+                    salary : "10000"
+                }
+        
+        
+                for (let key in user){
+                    alert(key)  //name, age, salary
+                }
+        
+        
+                for (let key in user){
+                    alert(user[key])  //Habib, 31, 10000  
+                }
+        
+        
+                for (let key in user){
+                    alert(key + " " + user[key])  //name: Habib, age: 31, salary: 10000
+                }
+        **/
+
+
+/**
+        let provinces = {
+            "34": "İSTANBUL",
+            "1" : "ADANA",
+            "2" : "ADIYAMAN"
+        }
+
+        for (let key in provinces) {
+            alert(provinces[key])  // 1,2,34 sıralı olarak gelir.  //
+        }
+**/
+
+
+
+/**
+        let provincesCenter = {
+            34 : "İSTANBUL",
+            1  :  "ADANA",
+            2  :  "ADIYAMAN"
+        }
+
+        for (let key in provincesCenter) {
+            alert(provincesCenter[key])  // 1,2,34 sıralı olarak gelir.  //
+        }
+**/
+
+let provincesCenter = {
+            "+34" : "İSTANBUL",  //Başına artı koyduğumuzda eklenme sırasına göre gelir.
+            "+1"  :  "ADANA",
+            "+2"  :  "ADIYAMAN"
+        }
+
+        for (let key in provincesCenter) {
+            alert(provincesCenter[key])  // 34, 1, 24 eklenme sırasına göre gelir. //
+        }
+
+    </script>
+</body>
+
+</html>

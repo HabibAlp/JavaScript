@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        /**
+        //Tüm maaşları toplayalım 
+                let maaslar = {
+                    ahmet :1000,
+                    dilek :1000,
+                    habib :2000,
+                    
+                }
+        
+                let toplam=0
+                
+                for(let key in maaslar){
+                   alert(key + " " + maaslar[key])
+                    toplam += maaslar[key] ;
+                }
+        
+                alert("Toplam maaş: "  + toplam)
+        **/
+
+        let ikiKatınaCikar = {
+            name: "Habib",
+            sayı1: 23,
+            sayı2: 45,
+            surname: "ALPASLAN",
+            sayı3: 34,
+            sayı4: 12,
+        }
+
+        function ikiİleCarp(ikiKatınaCikar){
+
+            for (let key in ikiKatınaCikar) {
+                alert(typeof ikiKatınaCikar[key] == "number" ? ikiKatınaCikar[key] *= 2 : ikiKatınaCikar[key] = ikiKatınaCikar[key])   
+            }
+        }
+
+        ikiİleCarp(ikiKatınaCikar)
+
+
+
+    </script>
+</body>
+
+</html>
