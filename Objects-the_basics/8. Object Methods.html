@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /**
+                let user = {
+                    name: "Habib",
+                    username: "ALPASLAN",
+        
+                }
+        
+                user.selamver = function () {
+                    alert("Merhaba");
+                }
+        
+                user.selamver();
+        **/
+
+        /**
+                let user = {
+                    name: "Yusuf",
+                    surname: "Dilek"
+                }
+        
+                function selamver() {
+                    alert("Selam")
+                }
+        
+        
+                user.selamver = selamver();
+        
+                user.selamver();
+        **/
+
+        /**
+        let user = {
+            selamver : function(){
+                alert("Bu daha kısa bir yol")
+            } 
+        }
+        
+        user.selamver()
+        **/
+
+        /**
+        let user = {
+            selamver() {
+                alert("Bu da daha kısa bir yol")
+            }
+        }
+        
+        user.selamver()
+        **/
+
+/**       
+        let user ={
+            name: "YUSUF ALİ",
+
+
+            selamver : function(){
+                alert(this.name)
+            }
+        }
+
+        user.selamver()    // selamver fonksiyonu user objesinin içinde olduğu için bunu yapabiliyoruz.
+      //selamver fonksiyonu objenin dışında kalırsa aşağıdai gibi yaparız.         
+**/
+ 
+
+/**
+        let administrator = {
+            name: "Yönetici"
+        }
+        
+        let user = {
+            name: "Kullanıcı"
+        }
+
+        selamver = function(){
+            alert("Selam " + this.name)
+        }
+
+        //selamver fonksiyonu objenin dışında olduğu için bu şekilde obje içine alırız.
+        administrator.atama =selamver;  
+        user.atama =selamver;
+
+        administrator.atama()
+        user.atama()
+**/ 
+    
+        let user = {
+            name : "Habib",
+            
+            selamver () {
+                alert(this.name)
+            },
+
+            yolcuet () {alert("Güle Güle")}
+        }
+
+        
+        (user.name == "Habib " ? user.selamver : user.yolcuet)();
+        
+    
+
+    </script>
+</body>
+
+</html>
